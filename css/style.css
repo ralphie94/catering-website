@@ -19,6 +19,16 @@ body {
     }
 }
 
+.menu-btn {
+    visibility: hidden;
+}
+
+@media screen and (max-width: 767px) {
+    .menu-btn {
+        visibility: visible;
+    }
+}
+
 header {
     display: grid;
     grid-template-columns: auto 1fr auto;

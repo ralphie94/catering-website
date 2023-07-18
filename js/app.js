@@ -1,15 +1,25 @@
+const backdrop = document.querySelector(".backdrop");
+const menu = document.querySelector(".menu-nav");
+
 const openMenu = () => {
-    document.querySelector(".backdrop").className = "backdrop active";
-    document.querySelector(".menu-nav").classList.add("active");
+    if (menu.className === "backdrop") {
+        backdrop.classList.toggle("backdrop");
+    } else {
+        backdrop.classList.toggle("active");
+    };
+    menu.classList.toggle("active");
 }
 
-// const closeMenu = () => {
-//     document.querySelector(".backdrop").className = "backdrop";
-//     document.querySelector(".menu-nav").className = "";
-// }
-
-document.getElementById("menuBtn").addEventListener("click", function(e) {
-    console.log("Clicked!");
+document.querySelector(".menu-btn").addEventListener("click", function(e) {
     e.preventDefault();
     openMenu();
+});
+
+document.querySelector(".close").addEventListener("click", function(e) {
+    openMenu();
+});
+
+document.querySelector(".backdrop").addEventListener("click", function(e) {
+    menu.classList.toggle("active");
+    backdrop.classList.toggle("active");
 });

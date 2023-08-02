@@ -5,7 +5,6 @@
 }
 
 body {
-    color: #ffffff;
     font-family: "Poppins";
 }
 
@@ -13,49 +12,62 @@ html {
     scroll-behavior: smooth;
 }
 
-.desktop {
+/* Index.html Styles */
+
+.desktop ul  {
     display: none;
 }
 
 @media screen and (min-width: 1200px) {
-    .desktop {
-        display: initial;
+    .desktop ul  {
+        display: flex;
     }
 }
 
-header {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    padding: 5px 20px;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: fixed;
-    top: 0;
     z-index: 2;
     width: 100%;
 }
 
-a.logo {
-    height: 12px;
-    width: 100px;
-    color: inherit;
+.menu {
+    display: flex;
 }
 
-header a {
-    color: #ffffff;
-}
-
-header nav a {
-    text-decoration: none;
-    padding: 5px 15px;
+.menu a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 30px;
     font-size: 14px;
-    color: #FFF;
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
-header nav.center {
-    text-align: center;
+.logo {
+    height: 70px;
+    width: 70px;
+    margin-top: 1rem;
+} 
+
+.logo-link {
+    height: 100%;
 }
 
-header nav.right {
-    text-align: right;
+nav.center {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: -16rem;
+    margin-bottom: 1rem;
+}
+
+nav.right {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: -2rem;
 }
 
 .menu-btn {
@@ -100,10 +112,11 @@ section {
     text-align: center;
     display: grid;
     grid-template-rows: min-content auto min-content;
+    color: #fff;
 }
 
 section a {
-    color: inherit;
+    color: #fff;
 }
 
 section .menu-buttons a {
@@ -282,6 +295,8 @@ footer {
 @media screen and (max-width: 767px) {
     .menu-btn {
         visibility: visible;
+        text-decoration: none;
+        color: #FFFFFF;
     }
 
     section h1 {

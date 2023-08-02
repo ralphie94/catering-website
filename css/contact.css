@@ -1,0 +1,90 @@
+/* Contact.html Styles */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins";
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-left {
+    width: 50%;
+    height: 100vh;
+    object-fit: cover;  
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url("../images/contact-img.jpg"), lightgray 50% / cover no-repeat;
+    background-size: cover;
+}
+
+.contact-right {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-right h1 {
+    margin-bottom: 10px;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.contact-right p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #000;
+    width: 373px;
+    outline: none;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+}
+
+select {
+    border: none;
+    border-bottom: 1px solid #000;
+    width: 373px;
+    outline: none;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+    color: gray;
+}
+
+.time-input {
+    width: 187px;
+}
+
+.contact-btn {
+    width: 140px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    background: #fff;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    float: left;
+}

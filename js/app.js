@@ -1,5 +1,6 @@
 const backdrop = document.querySelector(".backdrop");
 const menu = document.querySelector(".menu-nav");
+const links = document.querySelector(".side-link");
 
 const openMenu = () => {
     if (menu.className === "backdrop") {
@@ -20,6 +21,12 @@ document.querySelector(".close").addEventListener("click", function(e) {
 });
 
 document.querySelector(".backdrop").addEventListener("click", function(e) {
+    menu.classList.toggle("active");
+    backdrop.classList.toggle("active");
+});
+
+document.querySelector(".side-link").addEventListener("click", function(e) {
+    links.classList.toggle("active");
     menu.classList.toggle("active");
     backdrop.classList.toggle("active");
 });
